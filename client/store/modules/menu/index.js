@@ -1,6 +1,6 @@
 import * as types from '../../mutation-types'
 import lazyLoading from './lazyLoading'
-import uifeatures from './uifeatures'
+import checklistView from './checklist'
 
 // show: meta.label -> name
 // name: component name
@@ -17,7 +17,7 @@ const state = {
       },
       component: lazyLoading('dashboard', true)
     },
-    uifeatures
+    checklistView
   ]
 }
 
