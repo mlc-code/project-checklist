@@ -24,7 +24,7 @@ export default {
       name: 'New Checklist',
       path: 'new',
       hideSidebarMenu: true,
-      component: lazyLoading('checklist/checklistForm', false),
+      component: lazyLoading('checklist/form', false),
       meta: {
         link: 'checklist/checklistForm.vue'
       }
@@ -33,7 +33,7 @@ export default {
       name: 'Checklist View',
       path: 'view',
       hideSidebarMenu: true,
-      component: lazyLoading('checklist/checklistForm', false),
+      component: lazyLoading('checklist/form', false),
       meta: {
         link: 'checklist/checklistForm.vue'
       }

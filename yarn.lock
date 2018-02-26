@@ -309,6 +309,12 @@ aws4@^1.2.1, aws4@^1.6.0:
   version "1.6.0"
   resolved "https://registry.yarnpkg.com/aws4/-/aws4-1.6.0.tgz#83ef5ca860b2b32e4a0deedee8c771b9db57471e"
 
+axios@^0.15.3:
+  version "0.15.3"
+  resolved "https://registry.yarnpkg.com/axios/-/axios-0.15.3.tgz#2c9d638b2e191a08ea1d6cc988eadd6ba5bdc053"
+  dependencies:
+    follow-redirects "1.0.0"
+
 axios@^0.17.1:
   version "0.17.1"
   resolved "https://registry.yarnpkg.com/axios/-/axios-0.17.1.tgz#2d8e3e5d0bdbd7327f91bc814f5c57660f81824d"
@@ -2403,6 +2409,12 @@ flat-cache@^1.2.1:
 flatten@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/flatten/-/flatten-1.0.2.tgz#dae46a9d78fbe25292258cc1e780a41d95c03782"
+
+follow-redirects@1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/follow-redirects/-/follow-redirects-1.0.0.tgz#8e34298cbd2e176f254effec75a1c78cc849fd37"
+  dependencies:
+    debug "^2.2.0"
 
 follow-redirects@^1.2.5:
   version "1.3.0"
@@ -5568,9 +5580,9 @@ vue-bulma-card@^1.0.2:
   version "1.0.2"
   resolved "https://registry.yarnpkg.com/vue-bulma-card/-/vue-bulma-card-1.0.2.tgz#f9d9285672c58fb0ec4018e8751f0ff4bccd961d"
 
-vue-bulma-chartjs@^1.0.5:
+"vue-bulma-chartjs@git+https://github.com/mlc-code/chartjs.git#2b486964":
   version "1.0.5"
-  resolved "https://registry.yarnpkg.com/vue-bulma-chartjs/-/vue-bulma-chartjs-1.0.5.tgz#1dd6f024dee7e0ebaaf68ce336b01c32408aa716"
+  resolved "git+https://github.com/mlc-code/chartjs.git#2b486964a85cf449413b29267947b151a56bd40d"
   dependencies:
     chart.js "2.6.0"
 
@@ -5578,9 +5590,9 @@ vue-bulma-expanding@^0.0.1:
   version "0.0.1"
   resolved "https://registry.yarnpkg.com/vue-bulma-expanding/-/vue-bulma-expanding-0.0.1.tgz#fcf71c2e8ef09157175bd5187eb71b3ce75a2229"
 
-"vue-bulma-tooltip@git+https://github.com/mlc-lab/tooltip.git#bc6eaba":
+"vue-bulma-tooltip@git+https://github.com/mlc-code/tooltip.git#bc6eaba":
   version "1.0.4"
-  resolved "git+https://github.com/mlc-lab/tooltip.git#bc6eaba25628fe902f28a39095cbddadfb7a42f3"
+  resolved "git+https://github.com/mlc-code/tooltip.git#bc6eaba25628fe902f28a39095cbddadfb7a42f3"
   dependencies:
     classnames "2.2.5"
     hint.css "2.4.1"
@@ -5590,6 +5602,10 @@ vue-cleave@1.2.2:
   resolved "https://registry.yarnpkg.com/vue-cleave/-/vue-cleave-1.2.2.tgz#857f428c6c92b64ee1c4a82bfba654dea20d71af"
   dependencies:
     cleave.js "^0.7.15"
+
+vue-events@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/vue-events/-/vue-events-3.1.0.tgz#8e23121c345b4ff32ee054f9795995f3e344b27d"
 
 vue-hot-reload-api@^2.2.0:
   version "2.2.4"
@@ -5660,6 +5676,12 @@ vue-template-es2015-compiler@^1.6.0:
 vue@^2.2.2:
   version "2.5.13"
   resolved "https://registry.yarnpkg.com/vue/-/vue-2.5.13.tgz#95bd31e20efcf7a7f39239c9aa6787ce8cf578e1"
+
+vuetable-2@^1.7.5:
+  version "1.7.5"
+  resolved "https://registry.yarnpkg.com/vuetable-2/-/vuetable-2-1.7.5.tgz#7528c817279ccb774d9e26a169f1d19695b77310"
+  dependencies:
+    axios "^0.15.3"
 
 vuex-router-sync@^5.0.0:
   version "5.0.0"

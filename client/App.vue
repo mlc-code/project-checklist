@@ -12,6 +12,10 @@
 import NprogressContainer from 'vue-nprogress/src/NprogressContainer'
 import { Navbar, Sidebar, AppMain, FooterBar } from 'components/layout/'
 import { mapGetters, mapActions } from 'vuex'
+import {Vuetable} from 'vuetable-2'
+import Vue from 'vue'
+
+Vue.component('vuetable', Vuetable)
 
 export default {
   components: {
