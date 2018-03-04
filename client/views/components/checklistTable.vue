@@ -121,10 +121,10 @@ export default {
       return value.toUpperCase()
     },
     projectLabels (value) {
-      console.info('project labes' + value)
-      let text = '<div class="tags has-addons">'
+      console.info('labes' + value)
+      let text = '<div>'
       for (let i = 0; i < value.length; i++) {
-        text += '<span class="tag is-info">' + value[i] + '</span>'
+        text += '<span class="tag is-info">' + value[i] + '</span> '
       }
       text += '</div>'
       return text
