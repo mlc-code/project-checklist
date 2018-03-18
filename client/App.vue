@@ -14,7 +14,13 @@ import { Navbar, Sidebar, AppMain, FooterBar } from 'components/layout/'
 import { mapGetters, mapActions } from 'vuex'
 import {Vuetable} from 'vuetable-2'
 import Vue from 'vue'
+import VuePrism from 'vue-prism'
+import PrismLineNumbers from 'prismjs/plugins/line-numbers/prism-line-numbers'
+import PrismToolbar from 'prismjs/plugins/toolbar/prism-toolbar'
+import VueClipboard from 'vue-clipboard2'
 
+Vue.use(VueClipboard)
+Vue.use(VuePrism)
 Vue.component('vuetable', Vuetable)
 
 export default {
@@ -23,7 +29,9 @@ export default {
     Sidebar,
     AppMain,
     FooterBar,
-    NprogressContainer
+    NprogressContainer,
+    PrismLineNumbers,
+    PrismToolbar
   },
 
   beforeMount () {
@@ -65,6 +73,12 @@ export default {
 }
 
 @import '~bulma';
+
+@import '~vue-multiselect/dist/vue-multiselect.min.css';
+
+@import '~bulma-accordion/dist/bulma-accordion.min.css';
+
+@import '~prismjs/themes/prism-coy.css';
 
 $fa-font-path: '~font-awesome/fonts/';
 @import '~font-awesome/scss/font-awesome';

@@ -35,7 +35,7 @@ module.exports = {
       components: path.resolve(__dirname, '../client/components'),
       views: path.resolve(__dirname, '../client/views'),
       // third-party
-      'plotly.js': 'plotly.js/dist/plotly',
+      'bulma-accordion.js': 'bulma-accordion/dist/bulma-accordion.js',
       // vue-addon
       'vuex-store': path.resolve(__dirname, '../client/store')
     }

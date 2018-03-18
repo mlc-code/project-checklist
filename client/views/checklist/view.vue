@@ -4,8 +4,8 @@
           <div class="block">
             <h1 class="title is-1">{{ checkList.name }}</h1>
            
-              <div class="columns is-gapless is-3">
-                <div class="column is-1 ">
+              <div class="columns is-gapless">
+                <div class="column is-2 ">
                   <label class="label">Project types:</label>
                 </div>
                 <div class="column">
@@ -14,17 +14,41 @@
                   </div>
                 </div>
               </div>
-            <checklist-item></checklist-item>
-
-            <div class="control is-horizontal">
-              <div class="control-label">
-                <label class="label"></label>
+              <div class="columns is-gapless">
+                <div class="column is-2 ">
+                  <label class="label">Items distribution:</label>
+                </div>
+                <div class="column">
+                  <div class="field is-grouped is-grouped-multiline">
+                    <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag">higth items</span>
+                      <span class="tag is-danger">10%</span>
+                    </div>
+                    </div>
+                    <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag">normal items</span>
+                      <span class="tag is-warning">10%</span>
+                    </div>
+                    </div>
+                    <div class="control">
+                    <div class="tags has-addons">
+                      <span class="tag">low items</span>
+                      <span class="tag is-success">10%</span>
+                    </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="control">
-                <button class="button is-primary">Submit</button>
-                <button class="button is-link">Cancel</button>
+            <div class="panel-list">
+              <div v-for="entry in checkList.checklist">
+                  <div class="control">
+                    <checklist-item-view :element="entry"></checklist-item-view>
+                  </div>
               </div>
             </div>
+
           </div>
         </article>
       </div>
@@ -32,23 +56,15 @@
 
 <script>
 
-import Multiselect from 'vue-multiselect'
-import checklistItemList from './itemList'
+import checklistItemView from './itemView'
 
 export default {
   components: {
-    Multiselect,
-    'checklist-item': checklistItemList
+    'checklist-item-view': checklistItemView
   },
   data () {
     return {
-      // titleForm: this.$route.params.titleForm,
-      // operation: this.$route.name,
-      // viewMode: this.$route.viewMode,
       // checkList: this.$route.params.checkList || {},
-      titleForm: 'ejemplo',
-      operation: 'view-item',
-      viewMode: true,
       checkList: {
         'id': 2,
         'name': 'webfont',
@@ -80,6 +96,8 @@ export default {
               'url': 'https://css-tricks.com/snippets/css/using-font-face/'
             }
             ],
+            'lang': 'javascript',
+            'code': 'function prueba(){\n\t println\n}',
             'tags': ['all', 'webfont']
           },
           {
@@ -99,29 +117,7 @@ export default {
             'tags': ['all', 'webfont']
           }
         ]
-      },
-      projectList: [
-        { name: 'war', code: 'vu' },
-        { name: 'jar', code: 'js' },
-        { name: 'web', code: 'web' },
-        { name: 'java', code: 'os' }
-      ]
-    }
-  },
-  methods: {
-    created () {
-      console.log('route', this.$router.params)
-    },
-    submit (action, data, index) {
-      console.log('custom-actions: ' + action, data.name, index)
-    },
-    addTag (newTag) {
-      const tag = {
-        name: newTag,
-        code: newTag.substring(0, 2) + Math.floor((Math.random() * 10000000))
       }
-      this.options.push(tag)
-      this.value.push(tag)
     }
   },
   watch: {

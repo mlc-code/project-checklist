@@ -26,16 +26,16 @@ export default {
       hideSidebarMenu: true,
       component: lazyLoading('checklist/form', false),
       meta: {
-        link: 'checklist/checklistForm.vue'
+        link: 'checklist/form.vue'
       }
     },
     {
       name: 'Checklist View',
       path: 'view',
       hideSidebarMenu: true,
-      component: lazyLoading('checklist/form', false),
+      component: lazyLoading('checklist/view', false),
       meta: {
-        link: 'checklist/checklistForm.vue'
+        link: 'checklist/view.vue'
       }
     }
   ]

@@ -12,7 +12,7 @@
           detail-row-component="checklist-detail-row"
         >
           <template slot="actions" slot-scope="props">
-            <checklist-custom-row-action :elementName="'checklist'" :rowData="props.rowData" :rowIndex="props.rowIndex"></checklist-custom-row-action>
+            <checklist-custom-row-action :elementName="moreParams.elementName" :rowData="props.rowData" :rowIndex="props.rowIndex"></checklist-custom-row-action>
           </template>
           
           <template slot="distributionCheckList" slot-scope="props">
@@ -59,7 +59,7 @@ export default {
         }
       ],
       moreParams: {
-        elementName: 'checklist'
+        elementName: 'Checklist'
       }
     }
   }

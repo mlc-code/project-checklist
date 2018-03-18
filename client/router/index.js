@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
 import menuModule from 'vuex-store/modules/menu'
+import Home from 'views/Home'
 Vue.use(Router)
 
 export default new Router({
@@ -11,7 +12,7 @@ export default new Router({
     {
       name: 'Home',
       path: '/',
-      component: require('../views/Home')
+      component: Home
     },
     ...generateRoutesFromMenu(menuModule.state.items),
     {
