@@ -105,7 +105,6 @@
     "url-loader": "^0.6.2",
     "vue-html-loader": "^1.2.3",
     "vue-loader": "^13.7.0",
-    "vue-prism": "^1.0.5",
     "vue-template-compiler": "^2.2.2",
     "webpack": "^3.10.0",
     "webpack-dev-middleware": "^2.0.4",

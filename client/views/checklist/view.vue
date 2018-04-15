@@ -42,9 +42,9 @@
                 </div>
               </div>
             <div class="panel-list">
-              <div v-for="entry in checkList.checklist">
+              <div v-for="entry in checkList.checklist" :key="entry.title">
                   <div class="control">
-                    <checklist-item-view :element="entry"></checklist-item-view>
+                    <checklist-item-view v-bind:element="entry"></checklist-item-view>
                   </div>
               </div>
             </div>
